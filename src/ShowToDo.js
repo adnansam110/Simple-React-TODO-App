@@ -9,7 +9,7 @@ export default function ShowToDo({todos, deltodo, updatetodo}) {
                         <p>
                         {todo.content}
                         <span style={{margin:'30px'}}>
-                            <button className="btn btn-success" onClick={()=>updatetodo(todo.id)}>Update</button>
+                            <button className="btn btn-success" style={{ marginRight:'10px' }} onClick={()=>updatetodo(todo.id)}>Update</button>
                             <button className="btn btn-danger" onClick={()=>deltodo(todo.id)}>Delete</button>
                         </span>
                         </p>
